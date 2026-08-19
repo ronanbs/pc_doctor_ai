@@ -1,0 +1,8 @@
+streamlit
+openai
+chromadb
+python-dotenv
+beautifulsoup4
+requests
+pymupdf
+trafilatura
