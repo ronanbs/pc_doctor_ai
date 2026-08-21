@@ -1,0 +1,71 @@
+Title: blue screen of death driver_irql_not_less_or_equal
+Subreddit: r/computers
+Author: u/Apprehensive_Dare241
+
+Post:
+I have gotten the blue screen of death driver\_irql\_not\_less\_or\_equal around 4 times now and was wondering why it happens and how I can fix it.
+
+--- Top Comments ---
+
+[Comment 1] u/alejandroc90 (score: 1)
+I had this problem with a Sabrent SSD enclosure
+
+[Comment 2] u/demigorgon897 (score: 1)
+Me SSD was focked
+
+[Comment 3] u/Less-Dingo111 (score: 1)
+Damn I can't really format right now. Why they gotta come up with these new errors smh
+
+[Comment 4] u/HgVexing (score: 1)
+Have you found a fix?
+
+[Comment 5] u/MinecraftNoob2137 (score: 1)
+Same here
+
+[Comment 6] u/ZachLavinesBurner (score: 1)
+If anybody is still out there: can an external SD card reader cause this issue? I have not installed any drivers, haven't put in any new hardware onto the laptop, and run no games and really only one application (CapCut). Did the SD card reader cause a driver issue? That's the only hardware I've ever had in this device.
+
+[Comment 7] u/Alert_Marionberry_85 (score: 1)
+Hello my friends, I have a solution to this problem. After suffering with it and changing the RAM, power, water cooler, processor, and installing more fans, I did not reach a result and decided to format my computer. Here was my shock when the problem was solved as soon as I formatted it, despite paying a lot of money for maintenance. So anyone who faces this problem, all they have to do is format it and this problem will be solved immediately.
+
+Stop cod:DRIVER_IRQL_NOT_LESS_OR_EQUAL
+
+[Comment 8] u/Smooth_Mobile_9181 (score: 1)
+got the same problem. how to fix it sir?
+
+[Comment 9] u/Boiling_Key (score: 1)
+Old news but if this is JRAID.SYS, it's a Jmicron SATA driver from 2009 that they stopped supporting in 2012--but still sticks around in Win10, and fights certain MS processes annoyingly hard.  Try moving it out of its library/renaming it to jraid.bak/whatever and the problem should go away.
+
+[Comment 10] u/DoBusinessAlways (score: 1)
+Also having this issue. Not only that I have Firefox tabs constantly crash
+
+[Comment 11] u/demigorgon897 (score: 1)
+I keep getting this bsod when I open any app, other than discord, opera and various other apps. It only really happens if I open games or benchmarking things. Still trying to fix it… I’ll say If anything I do fixes it
+
+[Comment 12] u/RandomXUsr (score: 1)
+Please start a new thread.
+
+Include the results of testing with a psu testing and memory test with something like system rescue cd which is a live linux cd for troubleshooting.
+
+
+And update your drivers.
+
+Let us know whether you've over or underclocked your cpu.
+
+
+Again, add this info in a new thread and post results along with hardware.
+
+[Comment 13] u/rredditttrashh (score: 1)
+hey! i have this same issue and i am getting kernel power in my event viewer.  what should i do to resolve this? start looking through drivers and updating them?
+
+[Comment 14] u/RandomXUsr (score: 1)
+You may want to check minidump, and event viewer.
+
+What hardware do you have?
+
+Have you recently updated drivers or your OS?
+
+That error can be caused by a defective driver, or power issues. Do you getting any events mentioning Kernel power in the event viewer?
+
+[Comment 15] u/normal-fun-8729 (score: 1)
+What is Driver\_irql\_not\_less\_or\_equal? This error implies that your computer is unable to identify or point out the particular driver that is using an improper address. This error is usually caused by faulty, improperly configured, or corrupted drivers and it shows as a blue screen of death.

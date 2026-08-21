@@ -1,0 +1,222 @@
+Title: [SOLVED] Driver Power State Failure Windows 10
+Subreddit: r/techsupport
+Author: u/Chibimunchi
+
+Post:
+For the past few weeks I've been getting BSOD anytime I shut down or restarted my computer. Whenever I pressed Shutdown or Restart, my computer would take 5-10 mins shutting down or restarting before I got the BSOD and my PC turned off. I didn't add anything new to my PC.
+
+I searched all the forms and websites to fix this issue. 
+
+I....
+1. Ran sfc /scannow
+2. Checked Device Manager (if needing an update or a rollback. Checking for any yellow icons)
+3. Tried to go into safe mode (which I couldn't because of the Failure to shutdown/restart properly, it would not reboot into the safe mode selection screen)
+4. Downloaded BlueScreenView and saw that the issue file name was "ntoskrnl.exe"
+5. Ran DISM /Online /Cleanup-Image /RestoreHealth
+6. Tried some more stuff I found on the web (which didn't work)
+
+I was losing hope. So just for the heck of it I tried a simple Microsoft troubleshoot.
+Start>Settings>Update & Security>Troubleshoot>Additional Troubleshooters>Clicked each and ran troubleshooter
+
+When I reached "Power", it fixed two issues and my problem with Driver Power State Failure stopped.
+
+I hope this helps someone.
+
+--- Top Comments ---
+
+[Comment 1] u/Megamygdala (score: 2)
+Still having the problem as well
+
+[Comment 2] u/zoholy (score: 2)
+Did you solve it? I have a very similar situation with my own pc.
+
+[Comment 3] u/ValenChurro (score: 1)
+Well I'll be damned! Thanks!!
+
+[Comment 4] u/ValenChurro (score: 1)
+Trying this and i hope to god it works
+
+[Comment 5] u/KB_Teo (score: 1)
+I'm pretty late to the party but hope it'll help someone. I was having this very same issue and asked ChatGPT where can I find this troubleshoot option on Win11 and gave me the following instructions and it worked:
+
+1. Press **Win + R**.
+2. Type:
+
+&#8203;
+
+    msdt.exe -id PowerDiagnostic
+
+1. Press **Enter**.
+
+If it opens, click **Next** and let it scan for power-related issues.
+
+[Comment 6] u/KB_Teo (score: 1)
+I'm pretty late to the party but hope it'll help someone. I was having this very same issue and asked ChatGPT where can I find this troubleshoot option on Win11 and gave me the following instructions and it worked:
+
+1. Press **Win + R**.
+2. Type:
+
+&#8203;
+
+    msdt.exe -id PowerDiagnostic
+
+1. Press **Enter**.
+
+If it opens, click **Next** and let it scan for power-related issues.
+
+[Comment 7] u/KB_Teo (score: 1)
+I'm pretty late to the party but hope it'll help someone. I was having this very same issue and asked ChatGPT where can I find this troubleshoot option on Win11 and gave me the following instructions and it worked:
+
+1. Press **Win + R**.
+2. Type:
+
+&#8203;
+
+    msdt.exe -id PowerDiagnostic
+
+1. Press **Enter**.
+
+If it opens, click **Next** and let it scan for power-related issues.
+
+[Comment 8] u/Blurryface1104 (score: 1)
+Disabling power save on USB Serial Bus worked for me. Dell Precision 5560
+
+[Comment 9] u/Tall-Firefighter1612 (score: 1)
+I have the same problem. I am on windows 11. I have 
+- Audio
+- Network en Internet
+- Pinter
+- Windows update
+- Background Intteligent Transfer Service
+- Bluetooth
+- Camera
+- Programme Compatibility Trouble shooter
+- Video Playback
+-Windows Mediaplayer. 
+
+
+But no power troubleshooter
+
+[Comment 10] u/Fchipsish (score: 1)
+Hello, This is late, but by swapping I think he meant page swapping. Its something that is most definitely learned if you took Operating Systems class in college.
+
+Page swapping is a memory management technique that takes inactive memory from RAM and put them in pages in the Hard Disk to free up more space the RAM to be used.
+
+RAM= Random Access Memory which temporary holds data to be used and is cleared when you shutdown the computer. It is much faster to pull data and put data in the RAM than into the hard disk
+
+The reason for page swapping is to put the quick access for things that are not being used to the slower and less frequently used hard disk so that the quick use area is free up to do more computations or other things.
+
+this occurs when you are over using the RAM, the computer then tries to free up RAM space to continue to function. Hence Page Swapping
+
+Here is an analogy maybe would help
+
+You can picture like this, you are at a table writing something or doing math equations/formula or something (RAM), behind you is a filing cabinet with books relating to the research (Hard Disk). It is quick to grab the calculations you took down that you have on the table,, but it takes longer to look up the equations in the books in the filing cabinet and book shelves behind you.(difference in speed in accessing data from RAM vs Hard Disk)   
+
+
+Lets also say that on this table you need to be able to view all items on all pages at once.   
+ Now lets say the table is full of your equations already like completely full, now you need to still write more calculations on it. What do you do? Well you take part of the equations you have written and put it into the cabinet behind you, but just the equations you are not actively looking  at or using. That space is now usable to write more calculations on, but when you need the other equation, you will have to put another piece of paper into the cabinet and grab the old page from the cabinet and bring it out. (page swapping)
+
+I hope this helps.
+
+[Comment 11] u/HelicopterGood5065 (score: 1)
+Im havibg this problem on fresh 64gb ddr5 system, ram consumption doesbt go over 30-40%.
+
+[Comment 12] u/Prize_Mulberry_8893 (score: 1)
+https://preview.redd.it/617bwzpajtsg1.png?width=768&format=png&auto=webp&s=fea02320ef664504043ff4996a9c68271130eba4
+
+[Comment 13] u/Icy_Piglet4732 (score: 1)
+Works Like a charm. Thank you Reddit.
+
+[Comment 14] u/PomegranateNo2176 (score: 1)
+interesting
+
+[Comment 15] u/tummyachemedicine (score: 1)
+to be honest my laptop just stopped having that problem ever since, i dont know what happened
+
+[Comment 16] u/PatientDapper (score: 1)
+Just tried this. Fixed 4 issues. And I restarted my laptop and and using it normally. I'll get back to you and will give an update if it worked.
+
+[Comment 17] u/PatientDapper (score: 1)
+Hey there. Have been facing the same problem on my asus tuf laptop since 1.5 years. Tried everything including reinstalling windows and tweaking every software settings by going through forums and all but still the issue persists
+If you found the solution could you please enlighten me with the solution. It'll be of great help
+Also currently I am going through a bad financial phase so couldn't give my laptop for repair as of now. So any solution you've got would be very helpful
+
+[Comment 18] u/Electronic_Answer_66 (score: 1)
+I currently using win11 and win+q type "trouble" there was one
+
+[Comment 19] u/Olfassl (score: 1)
+This post saved my life after having this issue in a virtual machine for months now
+
+[Comment 20] u/Acceptable-Tap4189 (score: 1)
+Which ones show in the list of troubleshooters?
+
+[Comment 21] u/FredPlayss (score: 1)
+There is no additianal „Power“ Troubleshoot for me
+
+[Comment 22] u/Fluxaoh (score: 1)
+I got blue screened twice in a day so I decided I should probably browse for some quick diy solutions. It also fixed two issues for me so I'm really hoping that solves anything wrong. Thank you in advance if that was it.
+
+[Comment 23] u/ziobleed1 (score: 1)
+Worked for me on Windows 11: to show the "Power troubleshooter" (that's hidden in windows 11) :
+
+1. Win + R
+
+2. write: `msdt.exe /id PowerDiagnostic`
+
+[Comment 24] u/jusxchilln (score: 1)
+anyone have a fix for windows 11? there is no power troubleshooter in the settings
+
+[Comment 25] u/LaplaceZ (score: 1)
+Start>Settings>Update & Security>Troubleshoot>Additional Troubleshooters>Clicked each and ran troubleshooter
+
+[Comment 26] u/Desiderata770 (score: 1)
+It’s been 4 years but thank you SO MUCH for this post. I ran through some of the same steps you did but turns out that was too fancy and all I needed to do was run the damn Windows troubleshooter!
+
+[Comment 27] u/tummyachemedicine (score: 1)
+hello, i dont understand anything you said but i started having this problem (driver power state failure) after upgrading my laptop with a kingston 2tb nvme. is it a ram problem? i have 16gb ram. what does heavy swapping mean? i also use firefox.  
+sorry, i really know nothing about computers, but this thing is really getting annoying. if possible, could you explain in simpler terms?
+
+[Comment 28] u/CameraEmotional2788 (score: 1)
+My laptop has this issue and it kinda forced itself to update to windows 11 as my keyboard wasnt responsive. Now its stuck in a cycle of power drive failure and watchdo violation
+
+[Comment 29] u/Nintendo_gamer13 (score: 1)
+Download WinDbg and open the minidump file after the BSOD. (Run WinDbg as Administrator.) Then go to File --> Open Dump Files --> Browse --> This PC --> Windows --> MiniDump, select the file and click Open. (After you get the BSOD a file should pop up in your MiniDump folder.) After it has loaded, type '!analyze -v' in the bar. After it has finished, select everything (Ctrl + A) and paste it here. (Ctrl + V)
+
+[Comment 30] u/t12lve (score: 1)
+yep, didnt had issues since.
+
+[Comment 31] u/VTX_Overryde113 (score: 1)
+Did this fully fix it?
+
+[Comment 32] u/ElectricalAd9438 (score: 1)
+My troubleshooters don't even work.
+
+[Comment 33] u/Crafty_Bed7283 (score: 1)
+I have the same red card and I'm having the same problems, were you able to solve it?
+
+[Comment 34] u/SerenityCerulean (score: 1)
+Try updating GPU drivers, chipset drivers applies if it needed, BIOS update if all doesn’t work. 
+
+Device Manager → Network adapters / GPU → Properties → Power Management → disable
+
+Windows Power Plan → use High Performance or Balanced. 
+
+Try all one by one until you find a fix, if persists; consider disabling Fast Startup or Hibernation
+
+[Comment 35] u/YankeeKkl (score: 1)
+There is "i7-9750H 16gb ram intel uhd630 and gtx1660ti" inside the laptop. Was that the question you asked or the brand model name of the laptop?
+
+[Comment 36] u/SerenityCerulean (score: 1)
+What sort of laptop is it?
+
+[Comment 37] u/YankeeKkl (score: 1)
+Yes, the blue screen shows, everything freezes between 5 and 10 minutes after turning on and the blue screen appears, the error name is "Driver Power State Failure"
+
+[Comment 38] u/SerenityCerulean (score: 1)
+Is it showing blue screen and what does the error say?
+
+[Comment 39] u/YankeeKkl (score: 1)
+I still have this problem on my laptop, then could the problem be my power adapter? I tried everything on the internet but I couldn't find a solution.
+
+[Comment 40] u/SerenityCerulean (score: 1)
+I have upgraded my GPU, CPU and power supply. No issues ever since. My power supply was causing this because it was feeding 2 PCIe cables rather than 3.
