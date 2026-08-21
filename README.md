@@ -76,7 +76,7 @@ pc_doctor_ai/
    ```
 6. Run the app: `streamlit run app.py`
 
-## Stress-testing protocol (Phase 4)
+## Stress-testing protocol
 
 Each category is audited with four question types:
 - **Direct** — fact-checking against the specific source text
