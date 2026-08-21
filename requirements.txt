@@ -1,8 +1,8 @@
-streamlit
-openai
-chromadb
-python-dotenv
-beautifulsoup4
-requests
-pymupdf
-trafilatura
+streamlit>=1.35
+openai>=1.30
+chromadb>=0.5
+python-dotenv>=1.0
+beautifulsoup4>=4.12
+requests>=2.31
+pymupdf>=1.24
+trafilatura>=1.8
