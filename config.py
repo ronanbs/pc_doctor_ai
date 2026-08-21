@@ -19,10 +19,10 @@ if not OPENAI_API_KEY:
     )
 
 # Models
-CHAT_MODEL = "gpt-4o-mini"          # cheap + fast, good for a course project
+CHAT_MODEL = "gpt-4o-mini"
 EMBEDDING_MODEL = "text-embedding-3-small"
 
-# Chunking parameters (character-based, per course requirement)
+# Chunking parameters
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 150
 
